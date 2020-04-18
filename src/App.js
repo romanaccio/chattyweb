@@ -8,12 +8,13 @@ import {
 } from "react-router-dom";
 import Home from './pages/Home';
 import Chat from './pages/Chat';
+import Profile from './pages/Profile';
 import Signup from './pages/Signup';
 import Login from './pages/Login';
 import { auth } from './services/firebase';
 
 import logo from './logo.svg';
-import './App.css';
+import './styles.css';
 
 // cette fonction est un HOC : Higher Order Component
 // elle renvoit le bon composant si on est authentifié, sinon elle revoit vers
@@ -76,6 +77,11 @@ class App extends Component {
         <Router>
           <Switch>
             <Route exact path="/" component={Home} />
+            <PrivateRoute
+              path="/profile"
+              authenticated={this.state.authenticated}
+              component={Profile}
+            />
             <PrivateRoute
               path="/chat"
               authenticated={this.state.authenticated}
