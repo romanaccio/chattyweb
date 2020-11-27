@@ -17,7 +17,7 @@ function Header() {
           {auth().currentUser
             ? 
            <div className="navbar-nav">
-           <span className="nav-item nav-link ml-3 disabled" >Hi {auth().currentUser.email}</span>
+           <span className="nav-item nav-link disabled" >Hi {auth().currentUser.email}</span>
            <Link className="nav-item nav-link mr-3" to="/profile">Profile</Link>
            <Link className="nav-item nav-link mr-3" to="/chat">Chat</Link>
    

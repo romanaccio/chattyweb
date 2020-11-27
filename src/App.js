@@ -13,7 +13,6 @@ import Signup from './pages/Signup';
 import Login from './pages/Login';
 import { auth } from './services/firebase';
 
-import logo from './logo.svg';
 import './styles.css';
 
 // cette fonction est un HOC : Higher Order Component

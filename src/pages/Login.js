@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { signin } from "../helpers/auth";
- // import { signin, signInWithGoogle, signInWithGitHub } from "../helpers/auth";
- 
+
 export default class Login extends Component {
   constructor(props) {
     super(props);
@@ -14,13 +13,13 @@ export default class Login extends Component {
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
- 
+
   handleChange(event) {
     this.setState({
       [event.target.name]: event.target.value
     });
   }
- 
+
   async handleSubmit(event) {
     event.preventDefault();
     this.setState({ error: "" });
@@ -30,7 +29,7 @@ export default class Login extends Component {
       this.setState({ error: error.message });
     }
   }
- 
+
 
 
   render() {
