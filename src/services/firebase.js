@@ -1,4 +1,7 @@
 import firebase from 'firebase';
+import 'firebase/auth'
+import 'firebase/database'
+
 const config = {
     apiKey: "AIzaSyAD9nv1kbfA9uUs_7cKLmCrR_Dq1uCp3es",
     authDomain: "chatty-eaec0.firebaseapp.com",

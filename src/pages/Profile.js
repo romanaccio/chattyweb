@@ -25,6 +25,10 @@ export default class Profile extends Component {
                         <th scope="row">Email</th>
                         {auth().currentUser.email}
                       </tr>
+                      <tr>
+                        <th scope="row">Photo</th>
+                        <img style={{maxWidth: '300px', maxHeight: '300px'}} src={auth().currentUser.photoURL} alt={auth().currentUser.displayName}/> 
+                      </tr>
                     </tbody>
                   </table>
                   </div>
