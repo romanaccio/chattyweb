@@ -1,8 +1,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Ir is a simple React chat app, that uses Firebase authentication and Firebase Realtime Database as the backend.
+It is a simple React chat app, that uses Firebase authentication and Firebase Realtime Database as the backend, expanded from this tutorial : https://css-tricks.com/building-a-real-time-chat-app-with-react-and-firebase/
+
 Once authenticated, you can send chat messages that will be visible to all other authenticated users.
-The display uses Bootstrap and is very basic.
+The style uses Bootstrap and is very basic.
 
 ## Available Scripts
 
