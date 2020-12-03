@@ -15,7 +15,7 @@ export default class Profile extends Component {
               <h1 className="display-4">Profile</h1>
                 {auth().currentUser
                   ? <div>
-                  <table class="table">
+                  <table className="table">
                     <tbody>
                       <tr>
                         <th scope="row">Name</th>
@@ -32,7 +32,7 @@ export default class Profile extends Component {
                     </tbody>
                   </table>
                   </div>
-                  : <div class="alert alert-light" role="alert">
+                  : <div className="alert alert-light" role="alert">
                       Weird! You don't seem to be properly authenticated
                     </div>}
               
