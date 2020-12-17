@@ -5,6 +5,23 @@ It is a simple React chat app, that uses Firebase authentication and Firebase Re
 Once authenticated, you can send chat messages that will be visible to all other authenticated users.
 The style uses Bootstrap and is very basic.
 
+The realtime database rules are simple :
+````
+
+{
+    "rules": {
+        ".read": false,
+        ".write": false,
+        "chats": {
+            ".read": "auth != null",
+            ".write": "auth != null",
+        },
+    }
+}
+
+````
+
+
 ## Available Scripts
 
 In the project directory, you can run:
